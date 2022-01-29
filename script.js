@@ -7,16 +7,24 @@ let overall = 0
 let o_tot = 0
 let o_num = 0
 
-//cashier buttons
-// let cashierScoreBtn = document.querySelectorAll('.cashier-btn')
-// for(let i = 0; i < cashierScoreBtn.length; i++){
-    // addEventListener("click", function() {
-        // c_tot = c_tot + 1 
-        // c_num = c_num + 1
-        // cashier = c_tot / c_num
-        // console.log(cashier)
-        // })
-// }
+//loop
+/*for (let i=0; i< cashierScoreBtns.length; i++){
+  cashierScoreBtns[i].addEventListener('click', function(e){
+      c_tot = c_tot + Number(e.target.textContent) //c_tot += Number(e.target.textContent)
+      c_num = c_num + 1 //c_num += 1
+      cashier = c_tot / c_num
+      cashierScore.textContent = cashier       
+  })
+}
+
+for (let i=0; i< overallScoreBtns.length; i++){
+  overallScoreBtns[i].addEventListener('click', function(e){
+      o_tot = o_tot + Number(e.target.textContent) //o_tot += Number(e.target.textContent)
+      o_num = o_num + 1 //o_num += o_num
+      overall = o_tot / o_num
+      overallScore.textContent = overall       
+  })
+}*/
 
 // cashier button 1
 cashierScoreBtn1 = document.getElementById("cashier-1")
@@ -24,7 +32,7 @@ cashierScoreBtn1.addEventListener("click", function() {
    c_tot = c_tot + 1 //adding 1 to score
    c_num = c_num + 1
    cashier = c_tot / c_num
-   console.log(cashier)
+   cashierScore.textContent = cashier
 })
 
 // cashier button 2
@@ -33,7 +41,7 @@ cashierScoreBtn2.addEventListener("click", function() {
    c_tot = c_tot + 2 //adding 2 to score
    c_num = c_num + 1
    cashier = c_tot / c_num
-   console.log(cashier)
+   cashierScore.textContent = cashier
 })
 
 //cashier button 3
@@ -43,7 +51,6 @@ cashierScoreBtn3.addEventListener("click", function() {
    c_num = c_num + 1
    cashier = c_tot / c_num
    cashierScore.textContent = cashier
-   console.log(cashier)
 })
 
 // cashier button 4
@@ -53,7 +60,6 @@ cashierScoreBtn4.addEventListener("click", function() {
    c_num = c_num + 1
    cashier = c_tot / c_num
    cashierScore.textContent = cashier
-   console.log(cashier)
 })
 
 //overall button 1
@@ -62,7 +68,7 @@ overallScoreBtn1.addEventListener('click', function() {
     o_tot = o_tot + 1 //adding 1 to overall score
     o_num = o_num + 1
     overall = o_tot / o_num
-    console.log(overall)
+    overallScore.textContent = overall
 })
 
 //overall button 2
@@ -72,7 +78,6 @@ overallScoreBtn2.addEventListener('click', function(){
     o_num = o_num + 1
     overall = o_tot / o_num
     overallScore.textContent = overall
-    console.log(overall)
 })
 
 //overall button 3
@@ -82,7 +87,6 @@ overallScoreBtn3.addEventListener('click', function(){
     o_num = o_num + 1
     overall = o_tot / o_num
     overallScore.textContent = overall
-    console.log(overall)
 })
 
 //overall button 4
@@ -92,7 +96,6 @@ overallScoreBtn4.addEventListener('click', function(){
     o_num = o_num + 1
     overall = o_tot / o_num
     overallScore.textContent = overall
-    console.log(overall)
 })
 
 let cashierScore = document.getElementById("cashierScore")
