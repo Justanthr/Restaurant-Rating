@@ -7,8 +7,14 @@ let overall = 0
 let o_tot = 0
 let o_num = 0
 
+let cashierScore = document.getElementById("cashierScore")
+let overallScore = document.getElementById("overallScore")
+
+let cashierScoreBtns = document.querySelectorAll('.cashier-btn')
+let overallScoreBtns = document.querySelectorAll('.overall-btn')
+
 //loop
-/*for (let i=0; i< cashierScoreBtns.length; i++){
+for (let i=0; i< cashierScoreBtns.length; i++){
   cashierScoreBtns[i].addEventListener('click', function(e){
       c_tot = c_tot + Number(e.target.textContent) //c_tot += Number(e.target.textContent)
       c_num = c_num + 1 //c_num += 1
@@ -24,10 +30,10 @@ for (let i=0; i< overallScoreBtns.length; i++){
       overall = o_tot / o_num
       overallScore.textContent = overall       
   })
-}*/
+}
 
 // cashier button 1
-cashierScoreBtn1 = document.getElementById("cashier-1")
+/*cashierScoreBtn1 = document.getElementById("cashier-1")
 cashierScoreBtn1.addEventListener("click", function() {
    c_tot = c_tot + 1 //adding 1 to score
    c_num = c_num + 1
@@ -96,17 +102,14 @@ overallScoreBtn4.addEventListener('click', function(){
     o_num = o_num + 1
     overall = o_tot / o_num
     overallScore.textContent = overall
-})
-
-let cashierScore = document.getElementById("cashierScore")
-let overallScore = document.getElementById("overallScore")
+})*/
 
 let showHide = document.getElementById("show-hide")
 showHide.addEventListener('click',function(){
   let scoresDiv = document.getElementById("show-scores")
 
-  cashierScore.textContent = cashier
-  overallScore.textContent = overall
+  // cashierScore.textContent = cashier
+  // overallScore.textContent = overall
 
   let btnText = showHide.textContent
   if(btnText === "Display Ratings"){
